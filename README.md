@@ -33,7 +33,7 @@ Two key measures help assess the quality of the allocation design:
 Loss quantifies the variance inflation due to imbalance:
 
 $$
-L_n = \left(\frac{D_n}{\sqrt{n}}\right)^2 = 4n \left(\pi_n - \frac{1}{2}\right)^2
+L_n = \left(\frac{D_n}{\sqrt{n}}\right)^2 = 4n \left(\pi_n - \frac{1}{2}\right)^2,
 $$
 
 where \(\pi_n\) is the proportion of subjects allocated to treatment A after \(n\) patients.
@@ -70,8 +70,9 @@ where under complete randomization, $$Pr(G_i = 1) = \frac{1}{2}$$, and for biase
 
 To center the measure around zero, the adjusted Selection Bias is defined as:
 
-
-$${SB}_n = 2 SB_n - 1 = \frac{1}{n} \sum_{i=1}^n \left( 2 \Pr(G_i = 1) - 1 \right)$$
+$$
+{SB}_n =\frac{1}{n} \sum_{i=1}^n \left( 2 \Pr(G_i = 1) - 1 \right)
+$$
 
 which ranges from 0 (no bias, full randomness) to 1 (perfect predictability).
 
