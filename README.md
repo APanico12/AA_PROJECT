@@ -30,12 +30,11 @@ We examine the conflict between perfect balance and randomness, and introduce th
 
 Two key measures help assess the quality of the allocation design:
 
-### 1. Loss (\(L_n\))
+### 1. Loss %L_n%
 
 Loss quantifies the variance inflation due to imbalance:
-\[
-L_n = \left(\frac{D_n}{\sqrt{n}}\right)^2 = 4n \left(\pi_n - \frac{1}{2}\right)^2,
-\]
+
+$L_n = \left(\frac{D_n}{\sqrt{n}}\right)^2 = 4n \left(\pi_n - \frac{1}{2}\right)^2$
 where \(\pi_n\) is the proportion of subjects allocated to treatment A after \(n\) patients.
 
 - **Interpretation:**  
@@ -50,9 +49,9 @@ where \(\pi_n\) is the proportion of subjects allocated to treatment A after \(n
 ### 2. Standardized Bias (SB)
 
 Standardized bias measures the predictability of the allocation sequence:
-\[
-\text{SB} = \frac{|\mathbb{E}[D_n]|}{\sqrt{\mathrm{Var}(D_n)}}
-\]
+
+$\text{SB} = \frac{|\mathbb{E}[D_n]|}{\sqrt{\mathrm{Var}(D_n)}}$
+
 
 - **Interpretation:**  
   A high SB indicates predictable allocations (less randomness), while a low SB implies more random and less predictable assignments.
@@ -78,10 +77,10 @@ The BCD is designed to:
 
 ## Where to Find the Code / Implementation
 
-The implementation and simulation code for these designs and performance measures is contained in:
 
-[Link or path to your code file, e.g.: `biased_coin_design_simulation.py`]
 
+-sensitivity analysis on Dn and n can be found in  [`simulation_imbalance.R`]
+-simulation  about Selection Bias and Loss in   [`Simulation_complete.R`]
 ---
 
 ## Summary
