@@ -107,8 +107,8 @@ If you have any questions or need further explanations, feel free to reach out!
 *Date: [22/07/2025]*  
 *Authors*
 
- **Antonio Panico**  
+ *Antonio Panico*
    PhD candidate in Industrial Engineering, University of Parma, Italy.
- **Umberto Esposito**  
+ *Umberto Esposito*
    PhD candidate in Statistical Science, University of Bologna, Italy.
 ---
