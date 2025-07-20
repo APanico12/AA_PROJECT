@@ -62,11 +62,11 @@ G_i =
 \end{cases}
 $$
 
-The Selection Bias after \(n\) assignments is:
+The Selection Bias after $$n$$ assignments is:
 
 $SB_n = \frac{1}{n} \sum_{i=1}^n \Pr(G_i = 1),$
 
-where under complete randomization, \(\Pr(G_i = 1) = \frac{1}{2}\), and for biased designs \(\Pr(G_i = 1) \in \left[\frac{1}{2}, 1\right]\).
+where under complete randomization, $$Pr(G_i = 1) = \frac{1}{2}$$, and for biased designs $$Pr(G_i = 1) \in \left[\frac{1}{2}, 1\right]$$.
 
 To center the measure around zero, the adjusted Selection Bias is defined as:
 
@@ -75,7 +75,7 @@ $$\tilde{SB}_n = 2 SB_n - 1 = \frac{1}{n} \sum_{i=1}^n \left( 2 \Pr(G_i = 1) - 1
 which ranges from 0 (no bias, full randomness) to 1 (perfect predictability).
 
 - **Interpretation:**  
-  A higher $$SB_n$$ indicates greater predictability and thus more selection bias, while a value closer to \(\frac{1}{2}\) (or \(\tilde{SB}_n\) close to 0) indicates more randomness in treatment allocation.
+  A higher $$SB_n$$ indicates greater predictability and thus more selection bias, while a value closer to $$\frac{1}{2}$$ (or $$\tilde{SB}_n$$ close to 0) indicates more randomness in treatment allocation.
 
 ---
 
@@ -130,8 +130,6 @@ If you have any questions or need further explanations, feel free to reach out!
 *Prepared for [Modern Design of Experiment]*  
 *Date: [22/07/2025]*  
 *Authors*
- *Antonio Panico*
-   *PhD candidate in Industrial Engineering, University of Parma, Italy.*
- *Umberto Esposito*
-   *PhD candidate in Statistical Science, University of Bologna, Italy*.
+ *Antonio Panico[PhD candidate in Industrial Engineering, University of Parma, Italy]*
+ *Umberto Esposito [PhD candidate in Statistical Science, University of Bologna, Italy]*
 ---
