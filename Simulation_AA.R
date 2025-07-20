@@ -228,6 +228,6 @@ plotB <- ggplot(dfB, aes(x = x, y = y)) +
 
 # Show plots
 windows()
-#ggarrange(plotL, plotB, nrow = 2, common.legend = TRUE, legend = "bottom")
+ggarrange(plotL, plotB, nrow = 2, common.legend = TRUE, legend = "bottom")
 print(plotL)
 print(plotB)
