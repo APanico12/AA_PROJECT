@@ -15,9 +15,7 @@ We examine the conflict between perfect balance and randomness, and introduce th
 
 - **Imbalance and its growth:**  
   We study the imbalance measure $$D_n$$, defined as the difference in counts of patients allocated to treatments A and B after $$n$$ assignments:
-  $$
-  D_n = 2 \sum_{k=1}^n \delta_k - n,
-  $$
+  $D_n = 2 \sum_{k=1}^n \delta_k - n,$
   where $$\delta_k = 1$$ if the $$k$$-th patient is assigned to treatment A, otherwise 0.  
   Tracking $$D_n$$ helps us understand how well the design balances groups over time.
 
@@ -26,7 +24,7 @@ We examine the conflict between perfect balance and randomness, and introduce th
 
 ---
 
-## Measures of Balance: Loss and Standardized Bias (SB)
+## Measures of Balance: Loss and Selection Bias (SB)
 
 Two key measures help assess the quality of the allocation design:
 
@@ -45,18 +43,14 @@ where $$\pi_n$$ is the proportion of subjects allocated to treatment A after $$n
 
 - **Expected loss:**  
   The expected loss is related to the variance of $$D_n$$ as
-  $$
-  \mathbb{E}[L_n] = \frac{\mathrm{Var}(D_n)}{n}.
-  $$
+ 
+  $\mathbb{E}[L_n] = \frac{\mathrm{Var}(D_n)}{n}.$
 
-### 2. Standardized Bias (SB)
+### 2. Selection Bias (SB)
 
 Standardized bias measures the predictability of the allocation sequence:
 
-$$
-\mathrm{SB} = \frac{|\mathbb{E}[D_n]|}{\sqrt{\mathrm{Var}(D_n)}}
-$$
-
+$\mathrm{SB} = \frac{|\mathbb{E}[D_n]|}{\sqrt{\mathrm{Var}(D_n)}}$
 - **Interpretation:**  
   A high SB indicates predictable allocations (less randomness), while a low SB implies more random and less predictable assignments.
 
@@ -109,6 +103,12 @@ If you have any questions or need further explanations, feel free to reach out!
 
 ---
 
-*Prepared for [Your project/course/conference name]*  
-*Date: [Insert Date]*  
-*Author: [Your Name]*
+*Prepared for [Modern Design of Experiment]*  
+*Date: [22/07/2025]*  
+*Authors*
+
+ **Antonio Panico**  
+   PhD candidate in Industrial Engineering, University of Parma, Italy.
+ **Umberto Esposito**  
+   PhD candidate in Statistical Science, University of Bologna, Italy.
+---
