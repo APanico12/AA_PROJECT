@@ -19,11 +19,11 @@ gbcd_probability <- function(Dn, n, zeta = 1) {
 
 abcd_f <- function(Dn, a = 1) {
   if (abs(Dn) <= 1) {
-    0.5
+    return(0.5)
   } else if (Dn > 1) {
-    1 / (1 + (Dn^a))
-  } else {
-    (abs(Dn)^a) / (1 + (abs(Dn)^a))
+    return(1 / (1 + (Dn^a)))
+  } else { 
+    return((abs(Dn)^a) / (1 + (abs(Dn)^a)))
   }
 }
 
