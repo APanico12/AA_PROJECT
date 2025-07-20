@@ -33,7 +33,7 @@ Two key measures help assess the quality of the allocation design:
 Loss quantifies the variance inflation due to imbalance:
 
 $$
-L_n = \left(\frac{D_n}{\sqrt{n}}\right)^2 = 4n \left(\pi_n - \frac{1}{2}\right)^2,
+L_n = \left(\frac{D_n}{\sqrt{n}}\right)^2 = 4n \left(\pi_n - \frac{1}{2}\right)^2
 $$
 
 where \(\pi_n\) is the proportion of subjects allocated to treatment A after \(n\) patients.
@@ -133,6 +133,6 @@ If you have any questions or need further explanations, feel free to reach out!
 *date: 22/07/2025*  
 
 **authors:**  
-- antonio panico — phd candidate in industrial engineering, university of parma, italy  
-- umberto esposito — phd candidate in statistical science, university of bologna, italy
+- Antonio Panico — PhD candidate in industrial engineering, university of Parma, Italy  
+- Umberto Esposito — PhD candidate in statistical science, university of Bologna, Italy
 ---
