@@ -28,33 +28,55 @@ We examine the conflict between perfect balance and randomness, and introduce th
 
 Two key measures help assess the quality of the allocation design:
 
-### 1. Loss $$L_n$$
+### 1. Loss \(L_n\)
 
 Loss quantifies the variance inflation due to imbalance:
 
-$$
-L_n = \left(\frac{D_n}{\sqrt{n}}\right)^2 = 4n \left(\pi_n - \frac{1}{2}\right)^2,
-$$
+$L_n = \left(\frac{D_n}{\sqrt{n}}\right)^2 = 4n \left(\pi_n - \frac{1}{2}\right)^2,$
 
-where $$\pi_n$$ is the proportion of subjects allocated to treatment A after $$n$$ patients.
+where \(\pi_n\) is the proportion of subjects allocated to treatment A after \(n\) patients.
 
 - **Interpretation:**  
   Loss measures how far the allocation proportion deviates from perfect balance (0.5). Smaller values mean better balance, resulting in more precise treatment effect estimates.
 
 - **Expected loss:**  
-  The expected loss is related to the variance of $$D_n$$ as
- 
-  $\mathbb{E}[L_n] = \frac{\mathrm{Var}(D_n)}{n}.$
+  The expected loss is related to the variance of \(D_n\) as
+
+$\mathbb{E}[L_n] = \frac{\mathrm{Var}(D_n)}{n}.$
+
+---
 
 ### 2. Selection Bias (SB)
 
-Standardized bias measures the predictability of the allocation sequence:
+Selection Bias quantifies the predictability of the allocation sequence based on the probability of correctly guessing the next treatment assignment under an optimal guessing strategy.
 
-$\mathrm{SB} = \frac{|\mathbb{E}[D_n]|}{\sqrt{\mathrm{Var}(D_n)}}$
+Define the indicator for the \(i\)-th guess as:
+
+$$
+G_i = 
+\begin{cases}
+1 & \text{if the } i\text{-th guess is correct} \\
+0 & \text{otherwise}
+\end{cases}
+$$
+
+The Selection Bias after \(n\) assignments is:
+
+$SB_n = \frac{1}{n} \sum_{i=1}^n \Pr(G_i = 1),$
+
+where under complete randomization, \(\Pr(G_i = 1) = \frac{1}{2}\), and for biased designs \(\Pr(G_i = 1) \in \left[\frac{1}{2}, 1\right]\).
+
+To center the measure around zero, the adjusted Selection Bias is defined as:
+
+$\tilde{SB}_n = 2 SB_n - 1 = \frac{1}{n} \sum_{i=1}^n \left( 2 \Pr(G_i = 1) - 1 \right),$
+
+which ranges from 0 (no bias, full randomness) to 1 (perfect predictability).
+
 - **Interpretation:**  
-  A high SB indicates predictable allocations (less randomness), while a low SB implies more random and less predictable assignments.
+  A higher \(SB_n\) indicates greater predictability and thus more selection bias, while a value closer to \(\frac{1}{2}\) (or \(\tilde{SB}_n\) close to 0) indicates more randomness in treatment allocation.
 
 ---
+
 
 ## Aim of Biased Coin Design (BCD)
 
