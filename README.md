@@ -70,7 +70,9 @@ where under complete randomization, $$Pr(G_i = 1) = \frac{1}{2}$$, and for biase
 
 To center the measure around zero, the adjusted Selection Bias is defined as:
 
-$\tilde{SB}_n = 2 SB_n - 1 = \frac{1}{n} \sum_{i=1}^n \left( 2 \Pr(G_i = 1) - 1 \right),$
+$$
+\tilde{SB}_n = 2 SB_n - 1 = \frac{1}{n} \sum_{i=1}^n \left( 2 \Pr(G_i = 1) - 1 \right),
+$$
 
 which ranges from 0 (no bias, full randomness) to 1 (perfect predictability).
 
@@ -127,9 +129,10 @@ If you have any questions or need further explanations, feel free to reach out!
 
 ---
 
-*Prepared for [Modern Design of Experiment]*  
-*Date: [22/07/2025]*  
-*Authors*
-*Antonio Panico[PhD candidate in Industrial Engineering, University of Parma, Italy]*
-*Umberto Esposito [PhD candidate in Statistical Science, University of Bologna, Italy]*
+*prepared for [modern design of experiment]*  
+*date: 22/07/2025*  
+
+**authors:**  
+- antonio panico — phd candidate in industrial engineering, university of parma, italy  
+- umberto esposito — phd candidate in statistical science, university of bologna, italy
 ---
