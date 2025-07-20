@@ -100,7 +100,7 @@ The BCD is designed to:
 ## Where to Find the Code / Implementation
 
 - Sensitivity analysis on $$D_n$$ and $$n$$ can be found in [`simulation_imbalance.R`](simulation_imbalance.R)  
-- Simulation about Selection Bias and Loss in [`Simulation_complete.R`](Simulation_complete.R)
+- Simulation about Selection Bias and Loss in [`Simulation_complete.R`](Simulation_AA.R)
 
 ---
 
